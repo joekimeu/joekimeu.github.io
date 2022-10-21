@@ -63,10 +63,12 @@ strong {font-weight : var(--fw-bold)}
 }
 
 /*buttons */
-.btn {
-    display : incline-block;
-    padding : .5em 1.5em;
-    background : var(--clr-accent);
+
+a.btn {
+    display: incline-block;
+    padding: .5em 1.5em;
+    margin-right: 12px;
+    background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
     cursor : pointer;
@@ -74,7 +76,8 @@ strong {font-weight : var(--fw-bold)}
     text-transform: uppercase;
     letter-spacing : 2px;
     font-weight: var(--fw-bold);
-    transition : transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    justify-content: space-around;
 }
 
 /*Typography*/
@@ -82,7 +85,7 @@ strong {font-weight : var(--fw-bold)}
 h1,
 h2,
 h3 {
-    line-height: 1;
+    line-height: 1.7;
     margin: 0;
 }
 
@@ -99,19 +102,18 @@ h3 {font-size: var(--fs-h3)}
     font-size : var(--fs-h3);
 }
 
-section__title--info strong {
+.section__title--intro strong {
     display : block;
 }
 
 .section__title--intro{
     font-weight : var(--fw-reg);
-    background-color : var(--clr-accent);
     color : black;
 }
 
 
-.section__subtitle--info,
-.section__subtitle--about {
+.section__subtitle--intro,
+.section__subtitle--econ {
     background: var(--clr-accent);
     padding : .25em 1em;
     font-family: var(--ff-secondary);
@@ -273,7 +275,7 @@ header {
 
 /* My services section */
 
-.my-services {
+.aboutMe {
     background-color: var(--clr-dark);
     background-image : url(/Images/osu.png);
     background-size : cover;
@@ -281,84 +283,73 @@ header {
     background-blend-mode: multiply; 
     color: (var(--clr-accent));
     text-align: center;
-
+    margin-bottom : 4em;
+    color: (var(--clr-accent));
 }
 
-.section__title--services {
+.meAbout {
+    color: var(--clr-bg);
+    font-family: var(--ff-secondary);
+    margin-bottom: 0.65em;
+    font-size: var(--fw-h3);
+}
+
+.section__title--aboutme {
     color : var(--clr-accent);
     position : relative;
 }
 
-.section__title--services::after {
+.section__title--aboutme::after {
     content: '';
     display: block;
     width: 2em;
     height: 1px;
-    margin: 0.5em auto 1em;
+    margin: 0.5em auto 0.75em;
     background: var(--clr-bg);
     opacity: 0.25;
 }
 
-.services {
-    margin-bottom : 4em;
-}
-
-.service {
-    max-width: 500px;
-    margin : 0 auto;
-}
-
-@media (min-width: 800px) {
+/*@media (min-width: 800px) {
     .services {
         display : flex;
-        max-width : 1000px;
-        margin-left : auto;
-        margin-right : auto;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .service + .service {
         margin-left: 2em;
     }
-}
+} 
+The above could be used later for the idols / pictures section and also the btn spacing
+*/
 
-.about-me {
+.econ {
     max-width: 1000px;
     margin : 0 auto; 
 }
-.about-me__img {
-    box-shadow: var(--bs);
+
+.econ-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+  
 }
 
-@media (min-width : 600px) {
-    .about-me {
-        display : grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subititle img"
-            "text img";
-            grid-column-gap : 2em;
-    }
-
-    .section__title--about {
-        grid-area : title;
-    }
-
-    .section__subtitle--about {
-        grid-column : 1 / -1;
-        grid-row : 2;
-        position : relative;
-        left : -1em;
-        width : calc(100% + 2em);
-        padding-left : 1em;
-        padding-right : calc(200px + 4em);
-    }
-
-    .about-me__img {
-        grid-area : img;
-        position : relative;
-    }
-
+econ-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+@media screen and (max-width: 1024px) {
+    
 }
 
 .my-work {
@@ -367,7 +358,7 @@ header {
     text-align: center;
 }
 
-.portfolio {
+.idols {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
@@ -381,9 +372,12 @@ header {
     transition: 0.3s all ease;
 }
 
-
 .portfolio__img:hover {
     transform : scale (1.2);
+}
+
+.lexxxx {
+    grid-column: span 1.5;
 }
 
 .modal {
@@ -414,13 +408,7 @@ header {
 .modalTxt {
     margin-top: 1em;
   }
-.close {
-    position: absolute;
-    top: 1em;
-    right: 1.5em;
-    font-size: 1.5em;
-    cursor: pointer;
-}
+
  .modal.appear {
         opacity: 1;
         pointer-events: all;

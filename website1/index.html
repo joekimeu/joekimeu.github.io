@@ -18,10 +18,11 @@
         <link rel = "stylesheet" href = "Style Sheets/style.css">
 
     </head>
+
     <body>
         <header>
             <div class = "logo">
-                <img src = "Images/stadium.png" alt = "";>
+                <img src = "Images/initials.JPG" alt = "";>
             </div>
             <button class = "nav-toggle" aria-label="toggle navigation">
                 <span class = "hamburger"></span>
@@ -29,7 +30,7 @@
             <nav class = "nav">
                 <ul class = "nav__list">
                     <li class="nav__item"> <a href = "#home" class = "nav__link">Home</a></li>
-                    <li class="nav__item"> <a href = "#services" class = "nav__link">My Services</a></li>
+                    <li class="nav__item"> <a href = "#services" class = "nav__link">About me</a></li>
                     <li class="nav__item"> <a href = "#about" class = "nav__link">About me</a></li>
                     <li class="nav__item"> <a href = "#work" class = "nav__link">My idols</a></li> 
                 </ul>
@@ -41,63 +42,68 @@
             <h1 class = "section__title section__title--intro">
                 Hi, I am <strong> Joe Kimeu</strong>
             </h1>
-            <p class = "section__subtitle section__subtitle--intro">current undergrad</p>
+            <p class = "section__subtitle section__subtitle--intro">3rd Year CSE major<a href="https://twitter.com/ohiostate">@OSU</a></p>
             <img src = "Images/crew t-shirt.jpg" alt = "me in a crew t-shirt" class = "intro__img">
         </section>
 
+        <!--About me section-->
+        <section class = "aboutMe">
+            <h2 class = "section__title section__title--aboutme">About me</h2>
+            <h3 class = "meAbout">I am looking to meld interests in programming, finance, and economics. My ancestors hail from Uasin Gishu, Kenya, yet I ended up
+            in Columbus, Ohio.</h3>
+            <h3 class = "meAbout">My spare time is spent investing, cycling, despairing at Manchester United, and listening to music & podcasts (<a href="https://www.npr.org/sections/money/">Planet Money</a> being my favorite).</h3>
+            <h3 class = "meAbout">Short term goals include graduating college, witnessing Lebron win a ring, and paying off debt. Long term, I'd like to start a family and see bitcoin hit $150,000.</h3>
+            <h3 class = "meAbout" id = "finalpoint">Random activites below. List will be updated as I progress.</h3>
 
-        <!--My servies-->
-        <section class = "my-services" id = "services">
-            <h2 class = "section__titile section__title--services">What I do</h2>
-            <div class = "services">
-
-                <div class = "service">
-                    <h3>Soccer Fan</h3>
-                    <p>It is hard being a Manchester United supporter. </p>
-                </div>
-
-                <div class = "service">
-                    <h3>Nature Lover</h3>
-                    <p>My friends often call me a twig because of my lankiness. </p>
-                </div>
-
-                <div class = "service">
-                    <h3>Aspiring Engineer</h3>
-                    <p>I want to work for an impactful company. </p>
-                </div>
-            </div>
-
-            <a href = "#work" class = "btn">My Idols</a>
+            <a href = "https://docs.google.com/spreadsheets/d/1ajgmI50-yxf4yNoI9ntZYEDnOWqruhyxbpXnfG6mA_4/edit?usp=sharing" class = "btn">Cycling</a>
+            <!--provide link to a google sheet showing my cycling log for months of the year-->
+            <a href = "#work" class = "btn">Idols</a>
+            <!--direct to the econ portion, where I showcase my portfolio, thoughts on various companies, and any other writing i do-->
+            <a href = "#work" class = "btn">Coding</a>
+            <!--this could just be a direct link to a github, where i upload future projects (think net worth application)-->
+            <a href = "#work" class = "btn">Sports</a>
+            <!--link to a section containing a list of teams that i actively follow. Each team name will be hyperlinked to the twitter accounts-->
+            <!--it would be cool if it updated each team's most recent score and a current record-->
+            <a href = "#finance" class = "btn">Econ & Finance</a>
+            <!--directs to list of idols-->
         </section>
 
-        <!--About me-->
-        <section class = "about-me" id = "about">
-            <h2 class = "section__titile section__title--about">Who I am</h2>
-            <p class = "section__subitile section__subtitle--about">I am an undergrad at Ohio State majoring in Computer Science and Engineering.</p>
+        <!--Econmics and Finance-->
+        <section class = "econ" id = "finance">
+            <h2 class = "section__title section__title--econ">Econ & Finance</h2>
+            <div class = "econ_picture_section">
+                <div class = "econ-grid">
+                    <img src = "Images/portfolio.png" alt= "" class = "econ-img">
 
-            <div class = "about-me__body">
+                    <img src = "Images/writing.jpeg" alt= "" class = "econ-img">
+                    
+
+                    <img src = "Images/berkshire.png" alt= "" class = "econ-img">
+
+                    <img src = "Images/bmc3.png" alt= "Bloomberg Market Concepts Certificate" class = "econ-img">
+
             </div>
+            
 
-            <img src = "images/crew t-shirt.jpg" alt = "Ohio State logo" class="about-me__img">
         </section>
 
 
-        <!--My work-->
+        <!--idols-->
         <section class = "my-work" id = "work">
             <h2 class = "section__title">My Idols</h2>
 
-            <div class = "portfolio">
-                
-                    <img src = "Images/ant.jpeg" alt = "Anthony Edwards is an NBA star whose work ethic helped him to transcend trying family circumstances." class = "portfolio__img">
+            <div class = "idols">
+
+                <img src = "Images/ant.jpeg" alt = "Anthony Edwards is future hall of famer whose work ethic and vertical make him hard to dislike" class = "portfolio__img">
                   
-                    <img src = "Images/dimon.jpeg" alt = "Jamie Dimon is the JPMorgan & Chase CEO, who public speaking, leadership principles, and morals are worth emulating." class = "portfolio__img">
-               
-                    <img src = "Images/lexxx.jpeg" alt = "Lexx Little is a youtuber whose physique has inspired me to weight train." class = "portfolio__img">
+                <img src = "Images/dimon.jpeg" alt = "Jamie Dimon is the knowledgable and articulate head of JPMorgan" class = "portfolio__img"> 
                 
-                    <img src = "Images/mensah.jpeg"alt = "Jonathan Mensah is a Columbus Crew soccer player who always makes the right play. " class = "portfolio__img">
+                <img src = "Images/messi.jpeg"alt = "Messi is God reincarnated at 5 '6." class = "portfolio__img">
                
-                    <img src = "Images/samharris.jpeg"alt = "Sam Harris is the reason I meditate." class = "portfolio__img">
-                
+                <img src = "Images/samharris.jpeg"alt = "Sam Harris is a part time comedian/slow talker/meditator and a full time deep thinker." class = "portfolio__img">
+
+                <img src = "Images/lexxx.jpeg" alt = "Does Lexx Little lift? Also, who names their child Lexx?" class = "portfolio__img lexxxx">
+
             </div>
             <div class = "modal">
                 <span class = "close"><i class = "fas fa-times"></i></span>
@@ -108,9 +114,9 @@
             </div>
             <!--x for the modals -->
             <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
-
         </section>
 
+        <!--just a list of teams i follow and links to their websites with score updates (espn maybe)-->
 
 
         <!--footer-->
@@ -122,7 +128,6 @@
             </ul>
             <button id = "open-button">Click Me</button>
             <img src = "Images/dog.jpg" alt = "gorgeous dog" id = "dog">
-            <span class = "close"><i class = "fas fa-times"></i></span>
         </footer>
 
         <script src = "Scripts/index.js"></script>
