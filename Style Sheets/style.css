@@ -51,7 +51,7 @@ section {
 }
 
 img {
-    display : block;
+    display: block;
     max-width: 100%;
 }
 
@@ -71,13 +71,18 @@ a.btn {
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
-    cursor : pointer;
-    font-size : .8em;
+    cursor: pointer;
+    font-size: .8em;
     text-transform: uppercase;
-    letter-spacing : 2px;
+    letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
     justify-content: space-around;
+}
+
+a.btn:hover {
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 /*Typography*/
@@ -95,22 +100,22 @@ h3 {font-size: var(--fs-h3)}
 
 .section__title{ 
     margin-bottom: 0.25em;
+
 }
 
 .section__subtitle{
-    margin : 0;
-    font-size : var(--fs-h3);
+    margin: 0;
+    font-size: var(--fs-h3);
 }
 
 .section__title--intro strong {
-    display : block;
+    display: block;
 }
 
 .section__title--intro{
-    font-weight : var(--fw-reg);
-    color : black;
+    font-weight: var(--fw-reg);
+    color: black;
 }
-
 
 .section__subtitle--intro,
 .section__subtitle--econ {
@@ -243,7 +248,6 @@ header {
     box-shadow: var(--bs);
 }
 
-
 @media (min-width : 600px) {
     .intro {
         display : grid;
@@ -255,11 +259,12 @@ header {
             "img subttitle"; 
         grid-template-columns: min-content max-content;
     }
+
     .intro__img {
-        grid-area : img;
-        min-width : 250px;
-        position : relative;
-        z-index : 2;
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
     }
 
     .section__subtitle--intro {
@@ -272,6 +277,10 @@ header {
         width : calc(100% + 1.5em);
     }
 } 
+
+#planetMoney {
+    color: green;
+}
 
 /* My services section */
 
@@ -295,11 +304,12 @@ header {
 }
 
 .section__title--aboutme {
-    color : var(--clr-accent);
-    position : relative;
+    color: var(--clr-accent);
+    position: relative;
 }
 
-.section__title--aboutme::after {
+.section__title--aboutme::after,
+.section__title--idols::after {
     content: '';
     display: block;
     width: 2em;
@@ -323,61 +333,66 @@ header {
 } 
 The above could be used later for the idols / pictures section and also the btn spacing
 */
+.section__title--econ {
+    text-align: center;
+    padding: 1em 1em;
+}
 
 .econ {
     max-width: 1000px;
     margin : 0 auto; 
 }
-
 .econ-grid {
-    --gap: 16px;
-    --num-cols: 4;
-    --row-height: 300px
-    box-sizing: border-box;
-    padding: var(--gap);
     display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-  
-}
-
-econ-grid > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
- 
-@media screen and (max-width: 1024px) {
-    
-}
-
-.my-work {
-    background-color:  var(--clr-dark);
-    color : var(--clr-accent);
-    text-align: center;
-}
-
-.idols {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     margin: 0 1em;
 }
 
-.portfolio__img img{
-    overflow : hidden;
+.idol-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.idol-grid > img {
     width: 100%;
-    cursor : pointer;
+    height: 100%;
+    object-fit: cover;
+
+    overflow: hidden;
+    cursor: pointer;
     transition: 0.3s all ease;
 }
 
-.portfolio__img:hover {
-    transform : scale (1.2);
+.idol-grid img:hover {
+    opacity: 50%;
+}
+ 
+@media screen and (max-width: 1024px) {
+    .idol-grid {
+        --num-cols: 2;
+        --row-height: 200px
+    }
 }
 
 .lexxxx {
-    grid-column: span 1.5;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.my-idols {
+    background-color: var(--clr-dark);
+    color: var(--clr-accent);
+    text-align: center;
 }
 
 .modal {
@@ -425,20 +440,47 @@ econ-grid > img {
       transform: scale(1);
     }
   }
+/*sports section*/
+.section__title--sports {
+    text-align: center;
+}
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+    margin: 0 1em;
+}
+
+.sports {
+    background-color: var(--clr-bg);
+}
+
+.sports img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 1em;
+    border-radius: 1em;
+    border: #16e0bd;
+
+}
+.sports img:hover {
+    opacity: 80%; 
+    margin: 1em;
+}
 
 /* footer */
-
 .footer {
-    background: #1111;
-    color : var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
 }
 
-.footer a {
-    color : inherit;
-    text-decoration: none;
+.footer a{
     text-align: center;
+    color: inherit;
 }
 
 .social-list__link:hover {
@@ -451,10 +493,8 @@ econ-grid > img {
     font-weight: var(--fw-bold);
 }
 
-.footer__link:hover {
-    opacity: 0.7;
-    text-decoration: underline;
-
+ul {
+    list-style:none;
 }
 
 #dog {

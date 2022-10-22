@@ -27,7 +27,7 @@ openButton.addEventListener('click', () => {
 
 
 //modal
-const images = document.querySelectorAll(".portfolio__img");
+const images = document.querySelectorAll(".idol-grid img");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modalImg");
 const modalTxt = document.querySelector(".modalTxt");

@@ -11,10 +11,8 @@
 
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Tinos">
-
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto">
-
         <link rel = "stylesheet" href = "Style Sheets/style.css">
 
     </head>
@@ -30,9 +28,11 @@
             <nav class = "nav">
                 <ul class = "nav__list">
                     <li class="nav__item"> <a href = "#home" class = "nav__link">Home</a></li>
-                    <li class="nav__item"> <a href = "#services" class = "nav__link">About me</a></li>
-                    <li class="nav__item"> <a href = "#about" class = "nav__link">About me</a></li>
-                    <li class="nav__item"> <a href = "#work" class = "nav__link">My idols</a></li> 
+                    <li class="nav__item"> <a href = "#him" class = "nav__link">About me</a></li>
+                    <li class="nav__item"> <a href = "#finance" class = "nav__link">Econ & Finance</a></li>
+                    <li class="nav__item"> <a href = "#idol" class = "nav__link">Idols</a></li> 
+                    <li class="nav__item"> <a href = "#sport" class = "nav__link">Sports Interests</a></li> 
+                    <li class="nav__item"> <a href = "#footer" class = "nav__link">Contact Information</a></li> 
                 </ul>
             </nav>
         </header>
@@ -42,30 +42,24 @@
             <h1 class = "section__title section__title--intro">
                 Hi, I am <strong> Joe Kimeu</strong>
             </h1>
-            <p class = "section__subtitle section__subtitle--intro">3rd Year CSE major<a href="https://twitter.com/ohiostate">@OSU</a></p>
+            <p class = "section__subtitle section__subtitle--intro">3rd Year CSE major <a href="https://twitter.com/ohiostate" target="_blank" rel="noopener noreferrer" id = "OSU">@OSU</a></p>
             <img src = "Images/crew t-shirt.jpg" alt = "me in a crew t-shirt" class = "intro__img">
         </section>
 
         <!--About me section-->
-        <section class = "aboutMe">
+        <section class = "aboutMe" id = "him">
             <h2 class = "section__title section__title--aboutme">About me</h2>
             <h3 class = "meAbout">I am looking to meld interests in programming, finance, and economics. My ancestors hail from Uasin Gishu, Kenya, yet I ended up
             in Columbus, Ohio.</h3>
-            <h3 class = "meAbout">My spare time is spent investing, cycling, despairing at Manchester United, and listening to music & podcasts (<a href="https://www.npr.org/sections/money/">Planet Money</a> being my favorite).</h3>
+            <h3 class = "meAbout">My spare time is spent investing, cycling, despairing at Manchester United, and listening to music & podcasts (<a href="https://www.npr.org/sections/money/" target="_blank" rel="noopener noreferrer" id = "planetMoney">Planet Money</a> being my favorite).</h3>
             <h3 class = "meAbout">Short term goals include graduating college, witnessing Lebron win a ring, and paying off debt. Long term, I'd like to start a family and see bitcoin hit $150,000.</h3>
             <h3 class = "meAbout" id = "finalpoint">Random activites below. List will be updated as I progress.</h3>
 
-            <a href = "https://docs.google.com/spreadsheets/d/1ajgmI50-yxf4yNoI9ntZYEDnOWqruhyxbpXnfG6mA_4/edit?usp=sharing" class = "btn">Cycling</a>
-            <!--provide link to a google sheet showing my cycling log for months of the year-->
-            <a href = "#work" class = "btn">Idols</a>
-            <!--direct to the econ portion, where I showcase my portfolio, thoughts on various companies, and any other writing i do-->
-            <a href = "#work" class = "btn">Coding</a>
-            <!--this could just be a direct link to a github, where i upload future projects (think net worth application)-->
-            <a href = "#work" class = "btn">Sports</a>
-            <!--link to a section containing a list of teams that i actively follow. Each team name will be hyperlinked to the twitter accounts-->
-            <!--it would be cool if it updated each team's most recent score and a current record-->
+            <a href = "https://docs.google.com/spreadsheets/d/1ajgmI50-yxf4yNoI9ntZYEDnOWqruhyxbpXnfG6mA_4/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class = "btn">Cycling</a>
+            <a href = "#idol" class = "btn">Idols</a>
+            <a href = "https://github.com/joekimeu" target="_blank" rel="noopener noreferrer" class = "btn">Coding</a>
+            <a href = "#sport" class = "btn">Sports</a>
             <a href = "#finance" class = "btn">Econ & Finance</a>
-            <!--directs to list of idols-->
         </section>
 
         <!--Econmics and Finance-->
@@ -73,38 +67,29 @@
             <h2 class = "section__title section__title--econ">Econ & Finance</h2>
             <div class = "econ_picture_section">
                 <div class = "econ-grid">
-                    <img src = "Images/portfolio.png" alt= "" class = "econ-img">
-
-                    <img src = "Images/writing.jpeg" alt= "" class = "econ-img">
-                    
-
-                    <img src = "Images/berkshire.png" alt= "" class = "econ-img">
-
+                    <img src = "Images/portfolio.png" alt= "Picture of a pie chart" class = "econ-img">
+                    <img src = "Images/writing.jpeg" alt= "Pen to paper" class = "econ-img">
+                    <img src = "Images/berkshire.png" alt= "Berkshire Hathaway Holdings Logo" class = "econ-img">
                     <img src = "Images/bmc3.png" alt= "Bloomberg Market Concepts Certificate" class = "econ-img">
 
-            </div>
-            
-
+                    <a href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTN_SMdmUbvpPGlqfSP1OHM9YoBtBiLNMX3dyfL6tRBi8Y0enBzJPFh1UG0Wv7Z3hQfDns-aJrodo-w/pubhtml?gid=1839033856&single=true" target="_blank" rel="noopener noreferrer" class = "btn">Investment Portfolio</a>
+                    <a href = "#finance" class = "btn">Writings Coming Soon</a>
+                    <a href = "https://hedgefollow.com/funds/Berkshire+Hathaway" target="_blank" rel="noopener noreferrer" class = "btn">Berkshire Holdings</a>
+                    <a href = "Images/bmc3.png" target="_blank" rel="noopener noreferrer" class = "btn" download>Bloomberg Market Concepts</a>
+                </div>         
         </section>
 
-
         <!--idols-->
-        <section class = "my-work" id = "work">
-            <h2 class = "section__title">My Idols</h2>
-
-            <div class = "idols">
-
-                <img src = "Images/ant.jpeg" alt = "Anthony Edwards is future hall of famer whose work ethic and vertical make him hard to dislike" class = "portfolio__img">
-                  
-                <img src = "Images/dimon.jpeg" alt = "Jamie Dimon is the knowledgable and articulate head of JPMorgan" class = "portfolio__img"> 
-                
-                <img src = "Images/messi.jpeg"alt = "Messi is God reincarnated at 5 '6." class = "portfolio__img">
-               
-                <img src = "Images/samharris.jpeg"alt = "Sam Harris is a part time comedian/slow talker/meditator and a full time deep thinker." class = "portfolio__img">
-
-                <img src = "Images/lexxx.jpeg" alt = "Does Lexx Little lift? Also, who names their child Lexx?" class = "portfolio__img lexxxx">
-
+        <section class = "my-idols" id = "idol">
+            <h2 class = "section__title section__title--idols">Idols</h2>
+            <div class = "idol-grid">
+                <img src = "Images/lexxx.jpeg" alt = "Does Lexx Little lift? Also, who names their child Lexx?" class = "lexxxx">
+                <img src = "Images/ant.jpeg" alt = "Anthony Edwards is future hall of famer whose work ethic and vertical make him hard to dislike">    
+                <img src = "Images/dimon.jpeg" alt = "Jamie Dimon is the knowledgable and articulate head of JPMorgan">    
+                <img src = "Images/messi.jpeg"alt = "Messi is God reincarnated at 5 '6">
+                <img src = "Images/samharris.jpeg"alt = "Sam Harris is a part time comedian/slow talker/meditator and a full time deep thinker">                
             </div>
+
             <div class = "modal">
                 <span class = "close"><i class = "fas fa-times"></i></span>
                 <div class = "modalContent">
@@ -117,20 +102,45 @@
         </section>
 
         <!--just a list of teams i follow and links to their websites with score updates (espn maybe)-->
-
+        <section class = "sports" id = "sport">
+            <h2 class = "section__title section__title--sports">Sports Interests</h2>
+            <div class = "sports-grid">
+                <a href="https://www.espn.com/soccer/club/_/id/360/manchester-united" target="_blank" rel="noopener noreferrer">
+                    <img src="images/epl1.png" alt="English Premier League Logo">
+                </a>
+                <a href="https://www.espn.com/college-football/team/_/id/194/ohio-state-buckeyes" target="_blank" rel="noopener noreferrer">
+                    <img src="images/cfp.png" alt="College Football Playoff Logo">
+                </a>
+                <a href="https://www.espn.com/nba/team/_/name/gs/golden-state-warriors" target="_blank" rel="noopener noreferrer">
+                    <img src="images/nba1.jpg" alt="NBA Logo">
+                </a>
+                <a href="https://www.espn.com/soccer/club/_/id/183/columbus-crew" target="_blank" rel="noopener noreferrer">
+                    <img src="images/mls.png" alt="MLS Logo">
+                </a>
+                <a href="https://www.espn.com/nfl/team/_/name/dal/dallas-cowboys" target="_blank" rel="noopener noreferrer">
+                    <img src="images/nfl.jpg" alt="NFL Logo">
+                </a>
+            </div>
+        </section>
 
         <!--footer-->
         <footer class = "footer">
-            <a href = "mailto:joekimeu18@gmail.com" class = "footer__link">joekimeu18@gmail.com</a>
+            <h2 class = "section__title section__title--connect" id = "footer">Contact Information</h2>
+
             <ul class = "social-list">
                 <li class = "social-list__item">
-                    <a class = "social-list__link" href = "https://www.linkedin.com/in/joe-kimeu-75b529156" > Linkedin</a>
+                    <a class = "social-list__link" href = "www.linkedin.com/in/joe-kimeu"> Linkedin</a>
+                <li class = social-list__item>
+                    <a class = social-list__link href="mailto:joekimeu18@gmail.com">Email</a>
+                <li class = social-list__item>
+                    <a class = social-list__link href="https://twitter.com/joek1meu">Twitter</a>
             </ul>
-            <button id = "open-button">Click Me</button>
+            <button id = "open-button">Click for a dog</button>
             <img src = "Images/dog.jpg" alt = "gorgeous dog" id = "dog">
+
+            <button>Click for a fun fact</button>
         </footer>
 
         <script src = "Scripts/index.js"></script>
-
     </body>
 </html>
