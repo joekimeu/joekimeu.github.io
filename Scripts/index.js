@@ -12,20 +12,6 @@ navLinks.forEach(link => {
     })
 })
 
-const openButton = document.getElementById('open-button');
-
-const dog = document.getElementById('dog');
-
-openButton.addEventListener('click', () => {
-    dog.classList.add('show');
-    const close = document.querySelector(".close");
-    close.addEventListener("click", () => {
-      modal.classList.remove("appear");
-    });
-}
-)
-
-
 //modal
 const images = document.querySelectorAll(".idol-grid img");
 const modal = document.querySelector(".modal");
@@ -44,4 +30,3 @@ images.forEach((image) => {
     });
   });
 })
- 

@@ -12,7 +12,8 @@
 
     --clr-bg: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: rgba(35, 180, 224, 0.692);
+    --clr-blaccent: rgb(120, 198, 224);
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -68,12 +69,13 @@ a.btn {
     display: incline-block;
     padding: .5em 1.5em;
     margin-right: 12px;
-    background: var(--clr-accent);
+    background: var(--clr-blaccent);
     color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
     font-size: .8em;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
@@ -86,7 +88,6 @@ a.btn:hover {
 }
 
 /*Typography*/
-
 h1,
 h2,
 h3 {
@@ -100,7 +101,6 @@ h3 {font-size: var(--fs-h3)}
 
 .section__title{ 
     margin-bottom: 0.25em;
-
 }
 
 .section__subtitle{
@@ -115,18 +115,20 @@ h3 {font-size: var(--fs-h3)}
 .section__title--intro{
     font-weight: var(--fw-reg);
     color: black;
+    text-align: center;
+    margin: 1em 0;;
 }
 
-.section__subtitle--intro,
-.section__subtitle--econ {
+.section__subtitle--intro{
     background: var(--clr-accent);
     padding : .25em 1em;
     font-family: var(--ff-secondary);
-    margin-bottom : 1em;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
 .section__subititle--work {
-    color : var(--clr-accent);
+    color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom : 2em;
 }
@@ -135,10 +137,17 @@ h3 {font-size: var(--fs-h3)}
 
 header {
     display: flex;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: var(--clr-bg);
+    z-index: 3;
+    margin: auto;
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 55px;
+    position: sticky;
 }
 
 .nav {
@@ -239,21 +248,23 @@ header {
 /* Intro section */
 
 .intro {
+    margin-top: 85px;
     position : relative;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .intro__img {
     box-shadow: var(--bs);
+    margin: 1em 0;
 }
 
 @media (min-width : 600px) {
     .intro {
-        display : grid;
-        width : min-content;
-        margin : 0 auto;
-        grid-column-gap : 1em;
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
         grid-template-areas:
             "img title"
             "img subttitle"; 
@@ -271,10 +282,10 @@ header {
         align-self : start;
         grid-column : -1 /1;
         grid-row : 2;
-        text-align : right;
-        position : relative;
-        left : -1.5em;
-        width : calc(100% + 1.5em);
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
     }
 } 
 
@@ -282,7 +293,24 @@ header {
     color: green;
 }
 
-/* My services section */
+/* About me section */
+
+.about-me-grid {
+    box-sizing: border-box;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: var(--row-height);
+}
+ 
+@media screen and (max-width: 650px) {
+    .about-me-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .econ-btn {
+        grid-column: span 2;
+    }
+}
 
 .aboutMe {
     background-color: var(--clr-dark);
@@ -292,8 +320,6 @@ header {
     background-blend-mode: multiply; 
     color: (var(--clr-accent));
     text-align: center;
-    margin-bottom : 4em;
-    color: (var(--clr-accent));
 }
 
 .meAbout {
@@ -303,8 +329,13 @@ header {
     font-size: var(--fw-h3);
 }
 
-.section__title--aboutme {
-    color: var(--clr-accent);
+.btn-about-me {
+    white-space: nowrap;
+}
+
+.iection__title--aboutme,
+.section__title--idols {
+    color: var(--clr-blaccent);
     position: relative;
 }
 
@@ -319,34 +350,36 @@ header {
     opacity: 0.25;
 }
 
-/*@media (min-width: 800px) {
-    .services {
-        display : flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+/*Econ section*/
 
-    .service + .service {
-        margin-left: 2em;
-    }
-} 
-The above could be used later for the idols / pictures section and also the btn spacing
-*/
 .section__title--econ {
     text-align: center;
-    padding: 1em 1em;
+    margin: 0 auto;
+    padding-bottom: 1em;
 }
 
 .econ {
     max-width: 1000px;
-    margin : 0 auto; 
+    margin: 0 auto; 
 }
+
+.econ-img {
+    width: 100%;
+    height: 95%;
+}
+
 .econ-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     margin: 0 1em;
+    overflow-x: scroll;
+}
+
+.close {
+    z-index: 4;
+    top: 25px;
+    right: 57;
 }
 
 .idol-grid,
@@ -364,8 +397,7 @@ The above could be used later for the idols / pictures section and also the btn 
     gap: var(--gap);
 }
 
-.idol-grid img,
-.sports-grid img {
+.idol-grid img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -375,21 +407,34 @@ The above could be used later for the idols / pictures section and also the btn 
     transition: 0.3s all ease;
 }
 
+.sports-grid img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100%;
+}
+.epl-logo {
+    transform: scaleY(1.1);
+    height: 100%;
+    max-width: 100%;
+}
+
 .idol-grid img:hover {
     opacity: 50%;
 }
  
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 950px) {
     .idol-grid,
     .sports-grid {
         --num-cols: 2;
         --row-height: 200px
     }
 }
-.lexxxx, 
+
+.ryan, 
 .nba {
     grid-column: span 2;
     grid-row: span 2;
+    z-index: 2;
 }
 
 .my-idols {
@@ -406,7 +451,7 @@ The above could be used later for the idols / pictures section and also the btn 
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-    z-index: 1;
+    z-index: 3;
     overflow: auto;
     opacity: 0;
     pointer-events: none; 
@@ -418,31 +463,32 @@ The above could be used later for the idols / pictures section and also the btn 
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
 .modalImg {
     width: 80%;
     max-width: 700px;
 }
 .modalTxt {
     margin-top: 1em;
-  }
+}
 
- .modal.appear {
-        opacity: 1;
-        pointer-events: all;
- } 
-  .modal.appear .modalImg,
-  .modal.appear .modalTxt {
+.modal.appear {
+    opacity: 1;
+    pointer-events: all;
+} 
+.modal.appear .modalImg,
+.modal.appear .modalTxt {
     animation: zoom 0.3s linear;
-  }
-  @keyframes zoom {
+}
+
+@keyframes zoom {
     from {
       transform: scale(0);
     }
     to {
       transform: scale(1);
     }
-  }
+}
 
 /*sports section*/
 .section__title--sports {
@@ -461,7 +507,7 @@ The above could be used later for the idols / pictures section and also the btn 
 /* footer */
 .footer {
     background: var(--clr-dark);
-    color: var(--clr-accent);
+    color: var(--clr-blaccent);
     text-align: center;
     padding: 2.5em 0;
 }
@@ -482,23 +528,6 @@ The above could be used later for the idols / pictures section and also the btn 
 }
 
 ul {
-    list-style:none;
-}
-
-#dog {
-    opacity: 0;
-    max-width: 100%;
-    padding: 30px 50px;
-}
-
-#dog.show{
-    pointer-events: none;
-    opacity: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    list-style: none;
 }
 
