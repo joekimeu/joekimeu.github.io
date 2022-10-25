@@ -121,16 +121,10 @@ h3 {font-size: var(--fs-h3)}
 
 .section__subtitle--intro{
     background: var(--clr-accent);
-    padding : .25em 1em;
+    padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
     text-align: center;
-}
-
-.section__subititle--work {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom : 2em;
 }
 
 /* header */
@@ -196,7 +190,6 @@ header {
     top: 1em;
     z-index: 1000;
 }
-
 
 .nav-open .nav {
     transform: translateX(0);
@@ -315,7 +308,7 @@ header {
 .aboutMe {
     background-color: var(--clr-dark);
     background-image : url(/Images/osu.png);
-    background-size : cover;
+    background-size: cover;
     /*darkens background */
     background-blend-mode: multiply; 
     color: (var(--clr-accent));
@@ -333,7 +326,7 @@ header {
     white-space: nowrap;
 }
 
-.iection__title--aboutme,
+.section__title--aboutme,
 .section__title--idols {
     color: var(--clr-blaccent);
     position: relative;
@@ -411,11 +404,6 @@ header {
     width: 100%;
     object-fit: contain;
     max-height: 100%;
-}
-.epl-logo {
-    transform: scaleY(1.1);
-    height: 100%;
-    max-width: 100%;
 }
 
 .idol-grid img:hover {
@@ -507,27 +495,28 @@ header {
 /* footer */
 .footer {
     background: var(--clr-dark);
-    color: var(--clr-blaccent);
-    text-align: center;
-    padding: 2.5em 0;
-}
-
-.footer a{
-    text-align: center;
-    color: inherit;
-}
-
-.social-list__link:hover {
-    opacity: 0.7;
-    text-decoration: underline;
-}
-
-.footer__link{
-    font-size: var(--fs-h3);
-    font-weight: var(--fw-bold);
+    padding-top: 4em;
 }
 
 ul {
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
 }
 
+.social-list__item img{
+    width: 75px;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    margin: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s all ease;
+}
+
+.social-list__item img:hover{
+    opacity: 50%;
+}
