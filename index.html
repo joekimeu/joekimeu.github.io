@@ -14,59 +14,68 @@
     </head>
 
     <body>
-        <div class = "header">
-            <div class = "logo">
-                <a href="#home"><img src = "Images/initials.png" alt = "My Initials";></a>
+        <header>
+            <div class = "default-header">
+                <a href="#intro">joekimeu.com</a>
+                <button>menu</button>
             </div>
-            <div>
-                <button class = "nav-toggle" aria-label="toggle navigation">
-                    <span class = "hamburger"></span>
-                </button>
-                <nav class = "nav">
-                    <ul class = "nav__list">
-                        <li class="nav__item"> <a href = "#him" class = "nav__link">About me</a></li>
-                        <li class="nav__item"> <a href = "#finance" class = "nav__link">Econ & Finance</a></li>
-                        <li class="nav__item"> <a href = "#idol" class = "nav__link">Idols</a></li> 
-                        <li class="nav__item"> <a href = "#sport" class = "nav__link">Sports Interests</a></li> 
-                    </ul>
-                </nav>
+            <div class = "expanded-header">
+                <ul class = "nav">
+                    <li> <a href = "" class = "nav__link">about me</a></li>
+                    <li> <a href = "" class = "nav__link">projects</a></li>
+                    <li> <a href = "" class = "nav__link">writing</a></li> 
+                    <li> <a href = "" class = "nav__link">feedback</a></li> 
+                </ul>
             </div>
-        </div>
+        </header>
 
         <!--Introduction-->
         <div class = "intro" id = "home">
-            <h1 class = "sectionTitle">Hi, I am <strong> Joe Kimeu</strong></h1>
+            <h1 class = "sectionTitle">Hi, I am Joe Kimeu</h1>
         </div>
 
         <!--About me -->
-        <div class = "aboutMe" id = "him">
-            <h2 class = "sectionTitle">About me</h2>
-            <h3 class = "meAbout">Ohio State undergraduate looking to meld interests in various disciplines (computer science, english, physics, economics, etc) to better understand the world.</h3>
-            <h3 class = "meAbout">Short term, I'm looking to beat an <a href="https://docs.google.com/spreadsheets/d/1ajgmI50-yxf4yNoI9ntZYEDnOWqruhyxbpXnfG6mA_4/edit?usp=sharing" 
-            target="_blank" rel="noopener noreferrer">algorithm's predictions</a> for how many miles I'll run.</h3>
-            <h3 class = "meAbout" id = "finalpoint">Long term, I'd like to attend graduate school.</h3>
-
-            </div>
+        <div id = "intro">
+            <h2 class = "sectionTitle">about me</h2>
+            <h3>Ohio State undergraduate looking to meld interests in various disciplines (computer science, english, physics, economics, etc) to better understand the world.</h3>
+            <h3>Short term, I want to beat a <a href="https://docs.google.com/spreadsheets/d/1ajgmI50-yxf4yNoI9ntZYEDnOWqruhyxbpXnfG6mA_4/edit?usp=sharing" 
+            target="_blank" rel="noopener noreferrer">machine's predictions</a> for how many miles I'll run.</h3>
+            <h3>Long term, I plan to attend graduate school.</h3>
         </div>
         <!--CS Projects-->
         <div class = "projects">
-            <h2 class = "sectionTitle">Projects</h2>
-
+            <h2 class = "sectionTitle">projects</h2>
+            <ul>
+                <li><button><a href = "https://github.com/joekimeu">Github</a></button></li>
+                <li><button><a href = "">My Running Patterns</a></button></li>
+                <li><button><a href = "">Connect 4</a></button></li>
+                <li><button><a href = "">Calculator</a></button></li>
+            </ul>
         </div>
         <!--Certifications-->
         <div class = "certifications">
-            <h2 class = "sectionTitle">Certifcations</h2>
-
+            <h2 class = "sectionTitle">certifcations</h2>
+            <ul>
+                <li><button><a href = "">Intermediate ML, Kaggle</a></button></li>
+                <li><button><a href = "">Intro to ML, Kaggle</a></button></li>
+                <li><button><a href = "">Bloomberg ESG</a></button></li>
+                <li><button><a href = "">Bloomberg Market Concepts</a></button></li>
+            </ul>
         </div>
         <!--Other-->
         <div class = "other">
-            <h2 class = "sectionTitle">Other</h2>
+            <h2 class = "sectionTitle">writing</h2>
+            <ul>
+                <li><button><a href = "https://docs.google.com/document/d/16qQM-Z4xCz2EOyWj5_WYcwAf7xmYQeUKeCrBSAUkAOM/edit?usp=sharing">Demarcation: Practical Tool or Oppresive Force</a></button></li>
+                <li><button><a href = "">The Dead by James Joyce</a></button></li> <!--40 pages of bliss-->
+            </ul>
         </div>
-        <!--footer-->
-        <footer class = "footer">
-            <h2 class = "sectionTitle" id = "footer">Feedback</h2>      
-        </footer>
-
+        <!--footer after hitting sumbit showcase email-->
+        <div class = "footer">
+            <h2 class = "sectionTitle" id = "footer">feedback: how can this website improve?</h2>
+            <input type="text" name="Feedback Form" id="">
+            <input type="text" name="Feedback Form" id=""> <input type="button" value="submit"> 
+        </div>
         <script src = "Scripts/index.js"></script>
     </body>
 </html>
