@@ -13,69 +13,98 @@
         <link rel = "stylesheet" href = "Style Sheets/style.css">
     </head>
 
+
+    <header>
+        <div class = "default-header">
+            <a href="#home">joekimeu.com</a>
+            <div class = "menu-link-div"><a href="#home">menu</a></div>
+        </div>
+        <div class = "expanded-header">
+            <a href = "">about me</a>
+            <a href = "">projects</a>
+            <a href = "">other</a>
+            <a href = "">feedback</a>
+        </div>
+    </header>
     <body>
-        <header>
-            <div class = "default-header">
-                <a href="#intro">joekimeu.com</a>
-                <button>menu</button>
-            </div>
-            <div class = "expanded-header">
-                <ul class = "nav">
-                    <li> <a href = "" class = "nav__link">about me</a></li>
-                    <li> <a href = "" class = "nav__link">projects</a></li>
-                    <li> <a href = "" class = "nav__link">writing</a></li> 
-                    <li> <a href = "" class = "nav__link">feedback</a></li> 
-                </ul>
-            </div>
-        </header>
-
-        <!--Introduction-->
-        <div class = "intro" id = "home">
-            <h1 class = "sectionTitle">Hi, I am Joe Kimeu</h1>
+        <!--Introduction & about me-->
+        <div id = "home">
+            <h1>Welcome to my website!</h1>
+            <h3>I am Joe Kimeu, an <a href="https://www.osu.edu/" target="_blank" rel="noopener noreferrer">Ohio State</a> undergraduate, 
+                looking to work with others, solve problems, and better understand the world.</h3>
         </div>
 
-        <!--About me -->
-        <div id = "intro">
-            <h2 class = "sectionTitle">about me</h2>
-            <h3>Ohio State undergraduate looking to meld interests in various disciplines (computer science, english, physics, economics, etc) to better understand the world.</h3>
-            <h3>Short term, I want to beat a <a href="https://docs.google.com/spreadsheets/d/1ajgmI50-yxf4yNoI9ntZYEDnOWqruhyxbpXnfG6mA_4/edit?usp=sharing" 
-            target="_blank" rel="noopener noreferrer">machine's predictions</a> for how many miles I'll run.</h3>
-            <h3>Long term, I plan to attend graduate school.</h3>
-        </div>
         <!--CS Projects-->
-        <div class = "projects">
-            <h2 class = "sectionTitle">projects</h2>
-            <ul>
-                <li><button><a href = "https://github.com/joekimeu">Github</a></button></li>
-                <li><button><a href = "">My Running Patterns</a></button></li>
-                <li><button><a href = "">Connect 4</a></button></li>
-                <li><button><a href = "">Calculator</a></button></li>
-            </ul>
+        <div class = "primary-body-div projects">
+            <h2 class = "">Projects</h2>
+            <div>
+                <h3><a href = "https://github.com/joekimeu" target="_blank" rel="noopener noreferrer">Github</a></h3>
+                <p>A link to projects I'm working on.</p>
+            </div>
+            <div>
+                <h3><a href = "" target="_blank" rel="noopener noreferrer">My Running Patterns</a></h3>
+                <p>
+                    A machine learning algorithm and motivational tool that predicts my future running habits.
+                </p>
+            </div>
+            <div>
+                <h3><a href = "connect-4/" target="_blank" rel="noopener noreferrer">Connect 4</a></h3>
+                <p>
+                    A game that was fun until I lost four times in a row (unfortunately not a pun)
+                    to a 7 year old named Daniel.
+                </p>
+            </div>
+            <div>
+                <h3><a href = "" target="_blank" rel="noopener noreferrer">Calculator</a></h3>
+                <p>A Java based calculator made in an Object Oriented Programming class.</p>
+            </div>
+            <div>
+                <h3><a href = "https://github.com/joekimeu/tagcloudgenerator/tree/main" target="_blank" rel="noopener noreferrer">Tag Cloud Generator</a></h3>
+                <p>Another Java program that outputs the most commonly used words in a .txt file.</p>
+            </div>
         </div>
         <!--Certifications-->
-        <div class = "certifications">
-            <h2 class = "sectionTitle">certifcations</h2>
-            <ul>
-                <li><button><a href = "">Intermediate ML, Kaggle</a></button></li>
-                <li><button><a href = "">Intro to ML, Kaggle</a></button></li>
-                <li><button><a href = "">Bloomberg ESG</a></button></li>
-                <li><button><a href = "">Bloomberg Market Concepts</a></button></li>
-            </ul>
+        <div class = "primary-body-div certifications">
+            <h2 class = "">Certifications</h2>
+            <div>
+                <h3><a href = "" target="_blank" rel="noopener noreferrer">Intermediate ML, Kaggle</a></h3>
+            </div>
+            <div>
+                <h3><a href = "" target="_blank" rel="noopener noreferrer">Intro to ML, Kaggle</a></h3>
+            </div>
+            <div>
+                <h3><a href = "" target="_blank" rel="noopener noreferrer">Bloomberg ESG</a></h3>
+            </div>
+            <div>
+                <h3><a href = "Images/bmc3.png" target="_blank" rel="noopener noreferrer">Bloomberg Market Concepts</a></h3>
+            </div>
         </div>
         <!--Other-->
-        <div class = "other">
-            <h2 class = "sectionTitle">writing</h2>
-            <ul>
-                <li><button><a href = "https://docs.google.com/document/d/16qQM-Z4xCz2EOyWj5_WYcwAf7xmYQeUKeCrBSAUkAOM/edit?usp=sharing">Demarcation: Practical Tool or Oppresive Force</a></button></li>
-                <li><button><a href = "">The Dead by James Joyce</a></button></li> <!--40 pages of bliss-->
-            </ul>
+        <div class = "primary-body-div other">
+            <h2 class = "">Other</h2>
+            <div>
+                <h3><a href = "https://docs.google.com/document/d/16qQM-Z4xCz2EOyWj5_WYcwAf7xmYQeUKeCrBSAUkAOM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Demarcation: Practical Tool or Oppresive Force</a></h3>
+                <p>"The bigger takeaway...is that life is paradoxical, and I will never get the full picture. So, I’ll certainly remain confused, but this need not be an issue in the journey uphill."
+                </p>
+            </div>
+            <div>
+                <h3><a href = "https://www.online-literature.com/james_joyce/958/" target="_blank" rel="noopener noreferrer">The Dead by James Joyce</a></h3>
+                <p>One of greatest 20th century writers. Thank you <a href="https://english.osu.edu/people/prinz.1" target="_blank" rel="noopener noreferrer">Jessica Prinz</a>.</p>
+            </div>
+            <div>
+                <h3>
+                    <a href="/Images/sf-wallpaper.jpeg" target="_blank" rel="noopener noreferrer">The Background Image</a>
+                </h3>
+                <p>San Fransisco's famous <a href="https://en.wikipedia.org/wiki/Golden_Gate_Bridge" target="_blank" rel="noopener noreferrer">bridge</a>.</p>
+            </div>
+
         </div>
         <!--footer after hitting sumbit showcase email-->
         <div class = "footer">
-            <h2 class = "sectionTitle" id = "footer">feedback: how can this website improve?</h2>
+            <h2 class = "" id = "footer">feedback: how can this website improve?</h2>
             <input type="text" name="Feedback Form" id="">
             <input type="text" name="Feedback Form" id=""> <input type="button" value="submit"> 
         </div>
-        <script src = "Scripts/index.js"></script>
+        <script src = "Scripts/index.js" charset = "UTF-8"></script>
     </body>
 </html>

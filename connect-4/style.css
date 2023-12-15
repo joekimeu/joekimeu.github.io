@@ -1,0 +1,64 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    background-image: url(../Images/sf-wallpaper.jpeg);
+    background-size: cover;
+    background-color: var(--clr-dark);
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+}
+
+body {
+    width: 75%;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255 255 255 / 0.3);
+    backdrop-filter: blur(10px);
+}
+
+body h3 {
+    margin: 20px;
+    text-align: center;
+}
+div.board {
+    /* background-color: rgb(255 255 255 / 0.3);
+    backdrop-filter: blur(10px); */
+    min-height: 364px;
+}
+
+div.grid {
+    margin-top: 2px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    height: 52px;
+    width: 375px;
+    margin: auto;
+}
+
+div.grid div {
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+ }
+
+ div.grid div:hover {
+    background-color: aqua;
+ }
+
+ div.grid div.original {
+    background-color: black;
+ }
+
+.player-one {
+    background-color: red;
+    border-radius: 25px;
+    border: 1px solid;
+}
+
+.player-two {
+    background-color: yellow;
+    border-radius: 25px;
+    
+}
