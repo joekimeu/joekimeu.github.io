@@ -1,17 +1,13 @@
 
 :root {
-    --ff-primary: 'Tinos', serif; 
-    --ff-secondary: 'Roboto', serif;
+    --ff-primary: Arial, Helvetica, sans-serif; 
 
-    --fw-reg: 300;
-    --fw-bold: 900;
+    --fc-primary: rgb(255,255,255);
+    --fc-secondary: rgb(255, 0, 0);
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
-    --fs-body: 1rem;
-
-    --bs : 0.25em 0.25em 0.75em rgba(0,0,0,.25), 0,125em 0,125em 0.25em rgba(0,0,0,0.15);
 }
 
 h1 {font-size: var(--fs-h1)}
@@ -28,17 +24,14 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75%;
     margin: auto;
-    color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fc-primary);
+    font-family: var(--ff-primary);
     text-align: center;
 }
 header {
     margin: 17.5px 0;
     align-items: center;
-    /* top: 0;
-    position: fixed; */
 }
 
 header div{
@@ -64,10 +57,30 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    max-width: 800px;
 }
 
-#home h1{
-    margin: 0;
+#welcome-img {
+    max-width: 200px;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 570px) {
+    #home {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+#home h3{
+    align-items : center;
+    text-align: center;
 }
 
 body h3, h2{
@@ -75,15 +88,15 @@ body h3, h2{
 }
 
 body a, body a:visited{
-    color: red;
+    color: var(--fc-secondary);
 }
 
 div.primary-body-div {
     background-color: rgb(255 255 255 / 0.3);
     backdrop-filter: blur(5px);
     margin: 10px;
-    padding: 5ps;
     border-radius: 5px;
+    padding: 20px;
 }
 
 div.primary-body-div h2{
@@ -91,7 +104,7 @@ div.primary-body-div h2{
 }
 
 div.projects div{
-    border: blue;
+    border: rgb(0,0,255);
 }
 
 
@@ -102,11 +115,10 @@ div.primary-body-div p, h3 {
 
 /* footer */
 .footer {
-    background: var(--clr-dark);
+    background: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    
 }
 
