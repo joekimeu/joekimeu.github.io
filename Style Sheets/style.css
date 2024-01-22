@@ -55,7 +55,7 @@ div.menu-link-div{
 }
 
 div.menu-link-div a, div.menu-link-div a:visited{
-    color: var(--fc-primary);
+    color: var(--fc-secondary);
     text-decoration: none;
 }
 
