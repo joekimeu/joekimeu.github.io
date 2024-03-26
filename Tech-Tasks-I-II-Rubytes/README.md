@@ -1,0 +1,103 @@
+# Tech-Tasks-I-II-Rubytes
+
+# Brainstorming
+Things to talk about:
+- What it's used for
+- How to use it
+- History of Foundation
+- Background Information
+- When is it useful?
+- Alternatives
+
+# Outline
+- History of Foundation
+  - Developed by ZURB for efficient front-end programming
+    - ZURB is a product design company that assists startups with designing digital products
+    - A coding style guide at ZURB transitioned into Foundation in 2008 solely for clients
+  - In 2011, ZURB released Foundation 2.0 under the MIT software license
+    - Foundation 2 was about getting responsive design in front of people. Foundation 2's MIT License facilitated the dissemination of its use, allowing developers worldwide to adopt it for their projects.
+  - ZURB released Foundation 3.0 in June 2012, 4.0 in February 2013, 5.0 in November 2013, and 6.0 in November 2015
+    - Foundation 3 was about doing it in a smarter way, using Sass to build the framework. Sass is a stylesheet preprocessor used for increasing the organization of sheets and, therefore, the efficiency of code writing.
+    - Foundation 4 was about coding smarter, and we redid the entire framework to be Mobile First in collaboration with Luke Wroblewski. For the first time, an optimal user experience was ensured for users across most IOT devices.
+    - Foundation 5 is about making it fast: fast to learn, to write, and to execute for customers.
+  - The ownership and maintenance of Foundation were taken over by volunteers in 2019
+  - In July of 2022, the latest stable release of Foundation was released (6.7.5)
+  - ZURB currently has no equity in Foundation
+- What is Foundation? - joey
+- Background Information
+  - In the context of a front-end framework, responsive refers to the ability of a web application to adjust to different viewport sizes such as mobile, desktop, etc.
+  - A responsive front end framework is just a collection of code in HTML, CSS, and/or JavaScript that helps web developers build layouts that automatically adjust to different display sizes.
+  - Responsive front-end frameworks help developers achieve this by providing tools that allow the developer to make sure their design looks good on different devices and screen resolutions.
+  - The screen resolution is important to the design because it tells you how much visual information can be stored. This will affect the spacing between objects and figuring out how to overcome this is a non-trivial issue. 
+  - Foundation offers a grid system, customizable CSS components, JS plug-ins, and several pre-designed templates.
+  - The grid system is helpful because it gives the developer more structure and organization, it also makes it a lot easier to adjust the size and spacing of objects based on the viewport dimensions.
+  - Foundation's grid system complements Javascript plugins, which facilitate form validation, modeling, sliders, and various other tools for enhancing user experience.
+  - Foundation is mobile-first which means it is designed with mobile devices in mind and being responsive and adaptable to different screen sizes.
+  - Foundation is committed to accessibility, providing features and guidelines to make websites accessible to users with disabilities, as determined by the WCAG (Web Content Accessibility Guidelines).
+  - Foundation also offers a specialized framework for emails. Providing an easy way to create responsive email templates that work on various email clients and devices.
+  
+- When is it useful?
+  - Foundation is particularly useful for rapid prototyping due to its comprehensive library of UI components.
+  - Foundation is also an outstanding email tool facilitating email template creation and mass email campaigns. Business owners and marketers can create responsive email templates accessible and readable across various email clients   and devices (much like its web framework), ensuring fast and efficient email delivery.
+  - For websites expected to serve a wide range of devices and maintain a consistent experience across all of them, its mobile-first approach ensures that applications perform well on mobile devices.
+- Alternatives
+  - Bootstrap and Tailwind CSS are all popular alternatives to Foundation as they provide similar features and responsiveness.
+  - Foundation vs Bootstrap (Analysis)
+    - Foundation is used more in projects that require a high level of modularity and flexibility, along with a lot of customizability.
+    - While bootstrap is more for projects that require rapid development and need a simple standardized look throughout.
+- Getting Started With Foundation
+  - [Foundation's website](get.foundation) offers a simple way to begin tinkering with the interactive framework
+  - Download the zip file on the home page by clicking "Download Foundation 6"
+  - There will be various download options for a starter file, including a
+    - Lightweight zip that includes files necessary for web pages no more than one page
+    - A heavyweight zip that includes all necessary files for intense webpage modification
+    - a custom zip that asks for particular style elements, grid sizing, and padding size, among other elements
+  - For the time being, we'll download the heavyweight zip file which includes
+    - Index.html file
+    - CSS folder that includes three CSS files
+    - Javascript folder that includes four javascript files
+  - Before modifying anything, let's open the index.html file on our computer, noting the beautiful template
+- Introduction to our heavyweight zip file
+  - CSS folder: contains 3 files
+    - app.css: for personal styling
+    - foundation.css: default Foundation styling
+    - foundation.min.css: minifies the CSS stylesheet
+      - [Minifying](https://www.minifier.org/) strips all unnecessary elements, like comments or whitespace, so CSS and javascript files render faster
+  - JS folder -> 1 file and a folder
+    - app.js -> For personal javascript
+    - Vendor folder 
+      - foundation.js -> default Foundation Javascript
+      - foundation.min.js -> minifies the javascript code
+      - jquery.js -> default jQuery code
+        - [jQuery](https://jquery.com/) is a javascript library that facilitates the manipulation of HTML
+      - what-input.js -> modifies screen display depending on whether a user is using a mouse or a keyboard
+  - index.html file
+- Applying Foundation to build a simple portfolio website for John Doe
+  - First, open the index.html file and modify the body
+    - We'll remove all of the given elements and replace them with:
+      - general information about John Doe
+        - Education
+        - Age
+        - Experience
+      - project history
+        - Full-stack web development
+        - Python Programming
+        - Hardware modifications
+      - future projects
+        - Machine Learning
+        - Financial modeling
+  - Next, add styles to app.css, the sheet made for user customization
+  - Finally, improve the webpage functionality by adding personal functions to app.js
+
+# Research
+- https://get.foundation/learn/why-foundation.html
+- https://webdesign.tutsplus.com/how-they-did-it-the-foundation-framework--webdesign-17739a
+- https://zurb.com/about
+- https://en.wikipedia.org/wiki/Foundation_(framework)
+- https://get.foundation/sites/docs/accessibility.html
+- https://get.foundation/emails.html
+- https://github.com/foundation/foundation-sites
+- https://get.foundation/
+- https://jquery.com/
+- https://www.minifier.org/
+
