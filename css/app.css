@@ -76,6 +76,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    max-width: 800px;
  }
 
 body h3, h2{
@@ -89,6 +90,7 @@ body a, body a:visited{
 .project-section {
     display: flex;
     flex-direction: row;
+    overflow: scroll;
 }
 
 .project-container {
