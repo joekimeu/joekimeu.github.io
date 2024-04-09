@@ -1,85 +1,135 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Joe Kimeu</title>
 
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe's Foundation Portfolio</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>  
-    <header>
-      <div class = "port-name">
-        <img src="doe.jpeg" alt="">
-      </div>
-      <div id = "website-sections">
-        <ul>
-          <li><a href="#Education">Education</a></li>
-          <li><a href="#Experience">Experience</a></li>
-          <li><a href="#Projects">Projects</a></li>
-        </ul>
-      </div>
-    </header>
-    <img src="profile-pic.jpeg" alt="Picture of John Doe">
-    
-  
-    <h2 id = "Education">Education</h2>
-    <p>B.S. Computer Science and Engineering, The Ohio State University, 2021 - 2025</p>
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tinos">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel = "stylesheet" media = "all" href = "Style Sheets/style.css">
+    </head>
 
-    <h2 id = "Experience">Experience</h2>
-    <div class = "project-section">
-      <div class = "project-container">
-        <img src="osu.jpeg" alt="" class="project-img">
-        <div class="project-description-overlay">
-          <div class = "project-description">Teaching Assistant, The Ohio State University (CSE 3901), 03/2022 - Present</div>
-        </div> 
-      </div>
-      <div class = "project-container">
-        <img src="jpmorgan.jpeg" alt="" class="project-img">
-        <div class="project-description-overlay">
-          <div class = "project-description">Data Analyst Intern, JP Morgan Chase, 05/2023 - 08/2023</div>
-        </div> 
-      </div>
-      <div class = "project-container">
-        <img src="ford.jpg" alt="" class="project-img">
-        <div class="project-description-overlay">
-          <div class = "project-description">Software Engineering Intern, Ford, 05/2022 - 08/2022</div>
-        </div> 
-      </div>
-    </div>
-    
-    <h2 id = "Projects">Projects</h2>
-    <div class = "project-section">
-      <div class = "project-container">
-        <img src="pizza-img.jpeg" alt="" class="project-img">
-        <div class="project-description-overlay">
-          <div class = "project-description">Full Stack Website: Pizza Delivery App:
-            Ruby on Rails, HTML/CSS, Javascript</div>
-        </div> 
-      </div>
-      <div class = "project-container">
-        <img src="stocks.jpeg" alt="" class="project-img">
-        <div class="project-description-overlay">
-          <div class = "project-description">Financial Modeling Application:
-            Django, Python</div>
-        </div> 
-      </div>
-      <div class = "project-container">
-        <img src="pi-pic.jpeg" alt="" class="project-img">
-        <div class="project-description-overlay">
-          <div class = "project-description">Door Entry Detection System:
-            C++, Python, Raspberry PI</div>
-        </div> 
-      </div>
-    </div>
-    <footer>
-      John Doe &copy; 2024
-    </footer>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+
+    <body>
+        <header>
+            <div class = "default-header">
+                <div class = "menu-link-div"><a href="https://github.com/joekimeu/joekimeu.github.io" target="_blank" rel="noopener noreferrer">joekimeu.com</a></div>
+                <div class = "menu-link-div"><a href="#home">feedback</a></div>
+            </div>
+            <!-- <div class = "expanded-header">
+                <a href = "">about me</a>
+                <a href = "">projects</a>
+                <a href = "">other</a>
+                <a href = "">feedback</a>
+            </div> -->
+        </header>
+
+        <!--Introduction & about me-->
+        <div id = "home" class = "primary-body-div">
+            <img src="/Images/cover-photo.jpg" alt="Picture of Joe Kimeu" id = "welcome-img">
+            <div>
+                <h1>Welcome!</h1>
+                <h3>I am Joe Kimeu, an <a href="https://www.osu.edu/" target="_blank" rel="noopener noreferrer">Ohio State</a> undergraduate, 
+                    looking to work with others, solve problems, and better understand the world.</h3>
+            </div>
+        </div>
+
+        <!--CS Projects-->
+        <div class = "primary-body-div projects">
+            <h2 class = "">Projects</h2>
+            <div>
+                <h3><a href = "https://github.com/joekimeu" target="_blank" rel="noopener noreferrer">Github</a></h3>
+                <p>A link to current projects.</p>
+            </div>
+            <div>
+                <h3><a href = "https://github.com/joekimeu/eval-module" target="_blank" rel="noopener noreferrer">Feedback Form</a></h3>
+                <p>
+                    Full stack application that collects user data and information that should be improved for continouts improvement.
+                </p>
+                <p>
+                    Technology: MongoDB, RestAPI, Node.js, React
+                </p>
+            </div>
+            <div>
+                <h3><a href = "https://guardianangelha.com/" target="_blank" rel="noopener noreferrer">Guardian Angel Website</a></h3>
+                <p>Worked in a team of two to craft the UI.</p>
+                <p>
+                    Technologies: HTML/CSS, Javascript, JSON
+                </p>
+            </div>
+            <!-- <div>
+                <h3><a href = "" target="_blank" rel="noopener noreferrer">My Running Patterns</a></h3>
+                <p>
+                    A machine learning algorithm and motivational tool that predicts my future running habits.
+                </p>
+                <p>
+                    Technologies: Machine Learning, Python
+                </p>
+            </div> -->
+            <div>
+                <h3><a href = "connect-4/" target="_blank" rel="noopener noreferrer">Connect 4</a></h3>
+                <p>
+                    A game that was fun until I lost four times in a row (not a pun) to a 7 year old named Daniel.
+                </p>
+                <p>
+                    Technologies: Javascript
+                </p>
+            </div>
+
+            <div>
+                <h3><a href = "" target="_blank" rel="noopener noreferrer">Connect 4 Bot</a></h3>
+                <p>
+                    Software to avenge my losses.
+                </p>
+                <p>
+                    Technologies: Machine Learning, Python
+                </p>
+            </div>
+            
+            <div>
+                <h3><a href = "https://github.com/joekimeu/NaturalNumberCalculator" target="_blank" rel="noopener noreferrer">Calculator</a></h3>
+                <p>An academic project made in an Object Oriented Programming class.</p>
+                <p>
+                    Technologies: Java
+                </p>
+            </div>
+            <div>
+                <h3><a href = "https://github.com/joekimeu/tagcloudgenerator/tree/main" target="_blank" rel="noopener noreferrer">Tag Cloud Generator</a></h3>
+                <p>This outputs the most commonly used words in a .txt file.</p>
+                <p>
+                    Technologies: HTML/CSS, Java
+                </p>
+            </div>
+        </div>
+
+        <!--Other-->
+        <div class = "primary-body-div other">
+            <h2 class = "">Other</h2>
+            <div>
+                <h3><a href = "/demarction.html">Demarcation: Practical Tool or Oppresive Force</a></h3>
+                <p>"The bigger takeaway...is that life is paradoxical, and I will never get the full picture. So, I’ll certainly remain confused, but this need not be an issue in the journey uphill."
+                </p>
+            </div>
+            <div>
+                <h3><a href = "https://www.online-literature.com/james_joyce/958/" target="_blank" rel="noopener noreferrer">The Dead by James Joyce</a></h3>
+                <p>Thank you <a href="https://english.osu.edu/people/prinz.1" target="_blank" rel="noopener noreferrer">Jessica Prinz</a>.</p>
+            </div>
+            <div>
+                <h3>
+                    <a href="/Images/sf-wallpaper.jpeg" target="_blank" rel="noopener noreferrer">The Background Image</a>
+                </h3>
+                <p>San Fransisco's famous <a href="https://en.wikipedia.org/wiki/Golden_Gate_Bridge" target="_blank" rel="noopener noreferrer">bridge</a>.</p>
+            </div>
+            <!--footer after hitting sumbit showcase email-->
+            <div class = "footer">
+                <h3 class = "" id = "footer">joekimeu.com &#169 2024</h3>
+            </div>
+            <script src = "Scripts/index.js" charset = "UTF-8"></script>
+        </div>
+        
+    </body>
 </html>
