@@ -1,2 +1,2 @@
 personal website
-https://joekimeu.com
+https://joekimeu.github.io
