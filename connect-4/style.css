@@ -1,64 +1,147 @@
+:root {
+    /* Wabi-sabi inspired colors */
+    --color-bg: #f4f1ed;
+    --color-board: #e8e4e1;
+    --color-text: #2d3436;
+    --color-player1: #9c8b7d;  /* Earthy brown */
+    --color-player2: #b6ada5;  /* Muted gray */
+    --color-hover: #d7ccc8;    /* Light clay */
+    --color-border: #8d7b6d;   /* Dark earth */
+    
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    
+    /* Other */
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+/* Base styles */
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-    background-image: url(../Images/sf-wallpaper.jpeg);
-    background-size: cover;
-    background-color: var(--clr-dark);
-    background-attachment: fixed;
-    background-blend-mode: lighten;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
 }
 
 body {
-    width: 75%;
-    margin: 15px auto;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(255 255 255 / 0.3);
-    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 600px;
+    margin: var(--spacing-lg) auto;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    background-color: var(--color-board);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-body h3 {
-    margin: 20px;
+/* Typography */
+h3 {
+    margin: var(--spacing-md) 0;
     text-align: center;
-}
-div.board {
-    /* background-color: rgb(255 255 255 / 0.3);
-    backdrop-filter: blur(10px); */
-    min-height: 364px;
+    font-weight: 500;
+    color: var(--color-text);
+    letter-spacing: 0.5px;
 }
 
-div.grid {
-    margin-top: 2px;
-    border: 1px solid;
+/* Game board */
+.board {
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    background: linear-gradient(45deg, #f4f1ed, #e8e4e1);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.grid {
+    margin: 2px auto;
     display: flex;
-    flex-direction: row;
-    height: 52px;
-    width: 375px;
-    margin: auto;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: transparent;
 }
 
-div.grid div {
-    height: 50px;
-    width: 50px;
-    border: 2px solid;
- }
+.grid div {
+    height: 45px;
+    width: 45px;
+    border: 2px solid var(--color-border);
+    border-radius: 50%;
+    transition: var(--transition);
+    background-color: var(--color-bg);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
- div.grid div:hover {
-    background-color: aqua;
- }
+.grid div:hover {
+    background-color: var(--color-hover);
+    transform: scale(1.05);
+}
 
- div.grid div.original {
-    background-color: black;
- }
+.grid div.original {
+    background-color: var(--color-board);
+    border-color: var(--color-border);
+    opacity: 0.8;
+}
 
+/* Player pieces */
 .player-one {
-    background-color: red;
-    border-radius: 25px;
-    border: 1px solid;
+    background: var(--color-player1) !important;
+    border-color: transparent !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+    animation: dropPiece 0.3s ease-out;
 }
 
 .player-two {
-    background-color: yellow;
-    border-radius: 25px;
-    
+    background: var(--color-player2) !important;
+    border-color: transparent !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+    animation: dropPiece 0.3s ease-out;
+}
+
+/* Animations */
+@keyframes dropPiece {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Result message */
+#result {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg);
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    body {
+        width: 95%;
+        padding: var(--spacing-md);
+    }
+
+    .grid div {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #2d2a28;
+        --color-board: #3a3633;
+        --color-text: #e2e8f0;
+        --color-player1: #8b7355;
+        --color-player2: #9a8478;
+        --color-hover: #4a4643;
+        --color-border: #5d534a;
+    }
 }
